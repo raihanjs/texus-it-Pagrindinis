@@ -131,8 +131,14 @@ button {
 /*----------------------------------------*/
 /*  2. Header Area
 /*----------------------------------------*/
+
 .header-area {
   z-index: 99;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white);
 }
 /*----------------------------------------*/
 /*  2.1 Header Top Area
@@ -216,7 +222,7 @@ button {
   top: 90px;
   display: flex;
   flex-direction: column;
-  background-color: var(--black);
+  background-color: var(--white);
   width: 300px;
 }
 .main-menu > nav > ul > li:hover ul {
@@ -252,6 +258,7 @@ button {
   background-image: url("/img/hero.jpg");
   background-size: cover;
   background-position: left bottom;
+  overflow: hidden;
 }
 .hero-overlay {
   width: 642px;
@@ -288,7 +295,7 @@ button {
   justify-content: space-between;
 }
 .news-slider {
-  margin: 20px 0;
+  margin: 20px auto;
 }
 .news-slider .slick-slide {
   margin: 5px;
@@ -306,15 +313,16 @@ button {
   display: flex;
   justify-content: space-between;
   width: 90%;
-  padding: 20px;
+  padding: 25px;
   bottom: 20px;
   border-radius: 5px;
   left: 50%;
   transform: translateX(-50%);
   background-color: var(--white);
+  height: 120px;
 }
 .news-slider .news-slide div p {
-  width: 250px;
+  width: 245px;
   font-size: 18px;
   font-weight: 600;
   line-height: 26px;
@@ -525,7 +533,13 @@ button {
 }
 .footer-top {
   display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+.footer-item {
+  max-width: 33%;
+  min-width: 180px;
 }
 .footer-item .footer-logo {
   max-width: 162px;

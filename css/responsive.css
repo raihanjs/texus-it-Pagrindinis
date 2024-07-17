@@ -1,44 +1,181 @@
-/* small mobile :320px. */
-@media (max-width: 767px) {
-  h1 {
+/* Normal desktop :992px. */
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 28px;
+    line-height: 20px;
+  }
+  h3 {
     font-size: 26px;
-    line-height: 26px;
+  }
+  .white-btn,
+  .blue-btn {
+    font-size: 13px;
+    padding: 8px 28px;
+  }
+  .container {
+    margin: 0 5px;
+  }
+  .logo a img {
+    max-width: 150px;
+  }
+  .main-menu > nav > ul {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .main-menu > nav > ul > li {
+    padding: 20px 0;
+  }
+  .main-menu > nav > ul > li > ul {
+    top: 70px;
+  }
+  .news-slider .news-slide div {
+    padding: 15px;
+    bottom: 15px;
+    left: 50%;
+    height: 100px;
+  }
+  .news-slider .news-slide div p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .news-slider .news-slide div a {
+    width: 35px;
+    height: 35px;
+  }
+  .events-calendar {
+    max-width: 410px;
+  }
+  .events-details .events-list .events-item {
+    gap: 10px;
+    padding: 10px;
+  }
+  .footer-item .footer-logo {
+    max-width: 120px;
+  }
+}
+/* Tablet Device */
+@media (max-width: 991px) {
+  body {
+    font-size: 12px;
+  }
+  .white-btn,
+  .blue-btn {
+    padding: 6px 22px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
   }
   h2 {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 24px;
   }
   h3 {
     font-size: 18px;
-    line-height: 18px;
   }
-
   h4 {
     font-size: 16px;
     line-height: 16px;
   }
-  .white-btn,
-  .blue-btn {
-    border-radius: 30px;
-    padding: 0 12px;
+  .logo a img {
+    max-width: 85px;
+  }
+  .main-menu > nav > ul {
+    gap: 5px;
+  }
+  .main-menu > nav > ul > li a {
+    font-size: 13px;
+  }
+  .main-menu > nav > ul > li > ul {
+    top: 65px;
+    width: 250px;
+  }
+  .hero-area {
+    height: 420px;
+  }
+  .hero-overlay {
+    width: 500px;
+    height: 420px;
+  }
+  .hero-content {
+    height: 420px;
+  }
+  .hero-btns {
+    margin-top: 20px;
+    gap: 12px;
+  }
+  .news-area {
+    padding: 50px 0;
+    position: relative;
+  }
+  .news-slider .news-slide div {
+    padding: 10px;
+    bottom: 15px;
+    height: 70px;
+  }
+  .news-slider .news-slide div p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .events-calendar {
+    max-width: 325px;
+  }
+  .events-details .events-list .events-item .events-text p {
+    gap: 5px;
+    font-size: 14px;
+  }
+  .events-details .events-list .events-item {
+    gap: 5px;
+    padding: 5px;
+  }
+  .events-details .events-list .events-item .events-text p {
     font-size: 12px;
   }
-  .white-btn i,
-  .blue-btn i {
-    margin-left: 5px;
+  .events-details .events-btn {
+    margin-top: 20px;
   }
-  .container {
-    margin: 0 10px;
+  .about-area {
+    padding: 30px 0;
   }
-
-  /*----------------------------------------*/
-  /*  2. Header Area
-/*----------------------------------------*/
-  .ht-content {
-    flex-direction: column;
+  .about-details .right {
+    max-width: 550px;
   }
+  .about-banner {
+    margin-top: 25px;
+    height: 350px;
+  }
+  .about-social {
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .about-social .fb,
+  .about-social .ins,
+  .about-social .yt {
+    gap: 12px;
+  }
+  .about-social .fb i,
+  .about-social .ins i,
+  .about-social .yt i {
+    font-size: 22px;
+  }
+  .partners-title .partners-btns button i {
+    font-size: 20px;
+  }
+  .partners-area {
+    padding: 30px 0;
+  }
+  .footer-area {
+    padding-top: 50px;
+  }
+  .footer-item .footer-address {
+    font-size: 13px;
+    gap: 8px;
+  }
+}
+/* Mobile Device */
+@media (max-width: 767px) {
   .logo a img {
-    max-width: 150px;
+    max-width: 115px;
   }
   .main-menu {
     z-index: 999;
@@ -67,151 +204,137 @@
     padding-left: 10px;
     display: block;
   }
+  .main-menu > nav > ul > li > ul {
+    top: 35px;
+    padding: 12px;
+    width: 250px;
+  }
   .mobile-menu {
     display: block;
   }
-  /*----------------------------------------*/
-  /*  3. Hero Area
-/*----------------------------------------*/
-  .hero-area {
-    height: 250px;
+  .news-slider .news-slide {
+    max-width: 350px;
   }
-  .hero-overlay {
-    height: 250px;
-    width: 350px;
-  }
-  .hero-content {
-    margin-left: 100px;
-    height: 250px;
-  }
-  .hero-btns {
-    margin-top: 10px;
-    gap: 5px;
-  }
-  /*----------------------------------------*/
-  /*  4. News Area
-  /*----------------------------------------*/
-  .news-area {
-    padding: 30px 0;
-  }
-  /*----------------------------------------*/
-  /*  5. Events Area
-/*----------------------------------------*/
-  .events-area {
-    padding: 30px 0;
-  }
-  .events-top {
-    position: absolute;
-    top: -20px;
-    left: -50px;
-  }
-  .events-bottom {
-    position: absolute;
-    bottom: -20px;
-    right: -103px;
-  }
-  .events-top img,
-  .events-bottom img {
-    width: 50px;
-    opacity: 10%;
+  .news-btns .slick-prev,
+  .news-btns .slick-next {
+    left: 1%;
   }
   .events-content {
     flex-direction: column;
   }
-  .events-details .events-title {
-    margin-top: 30px;
+  .events-calendar {
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
-  .events-details .events-list .events-item {
+  .about-details .right {
+    max-width: 375px;
+  }
+  .about-banner {
+    height: 300px;
+  }
+  .about-social {
+    padding: 15px;
+  }
+  .about-social .fb::after,
+  .about-social .ins::after {
+    right: -15px;
+  }
+  .footer-item {
+    max-width: 33%;
+    min-width: 125px;
+  }
+  .footer-item ul li {
+    font-size: 12px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .footer-bottom .left {
     gap: 10px;
-    padding: 10px;
   }
-  .events-details .events-list .events-item .events-text p {
+}
+/* Small Mobile Device */
+@media (max-width: 575px) {
+  h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h4 {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 12px;
   }
-  .events-details .events-list .events-item .events-text p i {
+  .white-btn,
+  .blue-btn {
+    border-radius: 30px;
+    padding: 0 12px;
     font-size: 12px;
-    width: 12px;
   }
-  /*----------------------------------------*/
-  /*  6. About Area
-  /*----------------------------------------*/
-  .about-area {
+  .white-btn i,
+  .blue-btn i {
+    margin-left: 5px;
+  }
+  .ht-content {
+    flex-direction: column;
+  }
+  .ht-contact {
+    gap: 10px;
+  }
+  .hero-area {
+    height: 250px;
+  }
+  .hero-overlay {
+    width: 330px;
+    height: 250px;
+  }
+  .hero-content {
+    height: 250px;
+  }
+  .news-area {
     padding: 30px 0;
+  }
+  .news-btns .slick-prev {
+    left: 1%;
+  }
+  .news-btns .slick-next {
+    left: 95%;
   }
   .about-details {
     flex-direction: column;
   }
-  .about-details .left {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 10px;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-  }
-  .about-details .left h2 {
-    margin-bottom: 0;
-  }
-  .about-banner {
-    margin-top: 20px;
-    height: 250px;
-  }
-  .about-social {
-    margin-top: -20px;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  .about-social .fb,
-  .about-social .ins,
-  .about-social .yt {
-    gap: 5px;
-  }
-  .about-social .fb::after,
-  .about-social .ins::after {
-    right: 10px;
-    width: 1px;
-  }
   .about-social .fb i,
   .about-social .ins i,
   .about-social .yt i {
-    font-size: 20px;
+    font-size: 18px;
   }
-  /*----------------------------------------*/
-  /*  7. Partners Area
-  /*----------------------------------------*/
-  .partners {
-    padding: 30px 0;
-  }
-  .partners-title .partners-btns button {
-    margin-left: 10px;
+  .about-social .fb::after,
+  .about-social .ins::after {
+    right: 0px;
   }
   .partners-title .partners-btns button i {
     font-size: 15px;
   }
-  /*----------------------------------------*/
-  /*  7. Footer Area
-  /*----------------------------------------*/
-  .footer-area {
-    padding-top: 30px;
+  .partners-slider .partners-slide div img {
+    height: 41px;
   }
-  .footer-top {
-    flex-wrap: wrap;
-    gap: 10px;
+  .partners-slider .partners-slide div p {
+    font-size: 12px;
+    line-height: 12px;
   }
-  .footer-item .footer-logo {
-    max-width: 120px;
-    margin-bottom: 10px;
+  .partners-slider {
+    margin: 15px 0;
   }
-  .footer-item .footer-survey p {
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
-  .footer-bottom {
-    flex-direction: column;
+  .footer-item {
+    max-width: 100%;
   }
   .footer-bottom .left {
-    gap: 5px;
     flex-direction: column;
+    gap: 0;
+  }
+  .main-menu {
+    width: 265px;
   }
 }

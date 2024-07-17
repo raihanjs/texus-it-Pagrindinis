@@ -13,7 +13,7 @@ $(document).ready(function () {
     nextArrow: $(".news__next-arrow"),
     responsive: [
       {
-        breakpoint: 575,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
         },
@@ -30,7 +30,19 @@ $(document).ready(function () {
     nextArrow: $(".partners__next-arrow"),
     responsive: [
       {
-        breakpoint: 575,
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 576,
         settings: {
           slidesToShow: 2,
         },
