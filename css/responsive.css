@@ -1,0 +1,217 @@
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .white-btn,
+  .blue-btn {
+    border-radius: 30px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+  .white-btn i,
+  .blue-btn i {
+    margin-left: 5px;
+  }
+  .container {
+    margin: 0 10px;
+  }
+
+  /*----------------------------------------*/
+  /*  2. Header Area
+/*----------------------------------------*/
+  .ht-content {
+    flex-direction: column;
+  }
+  .logo a img {
+    max-width: 150px;
+  }
+  .main-menu {
+    z-index: 999;
+    position: fixed;
+    left: -300px;
+    top: 0;
+    height: 100%;
+    width: 280px;
+    transition: all linear 0.3s;
+    background-color: var(--gray);
+  }
+  .menu-right {
+    left: 0;
+  }
+  .main-menu > nav > ul {
+    padding: 20px;
+    gap: 0;
+    align-items: baseline;
+    flex-direction: column;
+  }
+  .main-menu > nav > ul > li {
+    padding: 0;
+    width: 100%;
+  }
+  .main-menu > nav > ul > li a {
+    padding-left: 10px;
+    display: block;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  /*----------------------------------------*/
+  /*  3. Hero Area
+/*----------------------------------------*/
+  .hero-area {
+    height: 250px;
+  }
+  .hero-overlay {
+    height: 250px;
+    width: 350px;
+  }
+  .hero-content {
+    margin-left: 100px;
+    height: 250px;
+  }
+  .hero-btns {
+    margin-top: 10px;
+    gap: 5px;
+  }
+  /*----------------------------------------*/
+  /*  4. News Area
+  /*----------------------------------------*/
+  .news-area {
+    padding: 30px 0;
+  }
+  /*----------------------------------------*/
+  /*  5. Events Area
+/*----------------------------------------*/
+  .events-area {
+    padding: 30px 0;
+  }
+  .events-top {
+    position: absolute;
+    top: -20px;
+    left: -50px;
+  }
+  .events-bottom {
+    position: absolute;
+    bottom: -20px;
+    right: -103px;
+  }
+  .events-top img,
+  .events-bottom img {
+    width: 50px;
+    opacity: 10%;
+  }
+  .events-content {
+    flex-direction: column;
+  }
+  .events-details .events-title {
+    margin-top: 30px;
+  }
+  .events-details .events-list .events-item {
+    gap: 10px;
+    padding: 10px;
+  }
+  .events-details .events-list .events-item .events-text p {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .events-details .events-list .events-item .events-text p i {
+    font-size: 12px;
+    width: 12px;
+  }
+  /*----------------------------------------*/
+  /*  6. About Area
+  /*----------------------------------------*/
+  .about-area {
+    padding: 30px 0;
+  }
+  .about-details {
+    flex-direction: column;
+  }
+  .about-details .left {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .about-details .left h2 {
+    margin-bottom: 0;
+  }
+  .about-banner {
+    margin-top: 20px;
+    height: 250px;
+  }
+  .about-social {
+    margin-top: -20px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .about-social .fb,
+  .about-social .ins,
+  .about-social .yt {
+    gap: 5px;
+  }
+  .about-social .fb::after,
+  .about-social .ins::after {
+    right: 10px;
+    width: 1px;
+  }
+  .about-social .fb i,
+  .about-social .ins i,
+  .about-social .yt i {
+    font-size: 20px;
+  }
+  /*----------------------------------------*/
+  /*  7. Partners Area
+  /*----------------------------------------*/
+  .partners {
+    padding: 30px 0;
+  }
+  .partners-title .partners-btns button {
+    margin-left: 10px;
+  }
+  .partners-title .partners-btns button i {
+    font-size: 15px;
+  }
+  /*----------------------------------------*/
+  /*  7. Footer Area
+  /*----------------------------------------*/
+  .footer-area {
+    padding-top: 30px;
+  }
+  .footer-top {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .footer-item .footer-logo {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+  .footer-item .footer-survey p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .footer-bottom .left {
+    gap: 5px;
+    flex-direction: column;
+  }
+}
