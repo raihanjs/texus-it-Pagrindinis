@@ -133,7 +133,7 @@ button {
 /*----------------------------------------*/
 
 .header-area {
-  z-index: 99;
+  z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
@@ -447,6 +447,8 @@ button {
   background-position: center;
 }
 .about-social {
+  position: relative;
+  z-index: 99;
   margin-top: -30px;
   padding: 50px;
   border-radius: 10px;
@@ -495,9 +497,21 @@ button {
   padding: 60px 0;
 }
 .partners-title {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.partners-title .partners-bg {
+  z-index: 9;
+  position: absolute;
+  top: -212px;
+  right: 0px;
+}
+.partners-title .partners-btns {
+  position: absolute;
+  right: 0;
+  z-index: 99;
 }
 .partners-title .partners-btns button {
   margin-left: 20px;

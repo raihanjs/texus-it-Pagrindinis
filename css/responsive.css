@@ -1,4 +1,4 @@
-/* Normal desktop :992px. */
+/* Normal desktop. */
 @media (max-width: 1199px) {
   h2 {
     font-size: 28px;
@@ -49,6 +49,9 @@
   .events-details .events-list .events-item {
     gap: 10px;
     padding: 10px;
+  }
+  .partners-title .partners-bg {
+    display: none;
   }
   .footer-item .footer-logo {
     max-width: 120px;
