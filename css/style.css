@@ -381,10 +381,42 @@ button {
   justify-content: space-between;
 }
 .events-calendar {
-  max-width: 510px;
+  width: 510px;
 }
 .events-calendar img {
   width: 100%;
+}
+.mbsc-datepicker {
+  position: relative;
+}
+button.mbsc-calendar-button {
+  font-size: 22px !important;
+  font-weight: 600;
+}
+.mbsc-picker-header {
+  position: absolute;
+  top: 65px;
+  left: 32px;
+  z-index: 99;
+  font-size: 18px;
+  padding: 0 !important;
+  font-weight: 400 !important;
+  color: var(--white);
+  border: 1px solid transparent !important;
+}
+.mbsc-ios.mbsc-datepicker-inline {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #aab3db;
+}
+.mbsc-calendar-header.mbsc-ios {
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  background-color: var(--theme);
+}
+.mbsc-ios.mbsc-calendar-button.mbsc-button {
+  color: var(--white);
 }
 .events-details .events-title {
   margin-bottom: 30px;

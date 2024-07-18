@@ -49,4 +49,18 @@ $(document).ready(function () {
       },
     ],
   });
+  // Calendar
+  $("#calendar")
+    .mobiscroll()
+    .datepicker({
+      controls: ["calendar"],
+      display: "inline",
+      headerText: "Trečiadienis, 05-19 ",
+    });
+  mobiscroll.setOptions({
+    theme: "ios",
+    themeVariant: "light",
+  });
+
+  $(".mbsc-calendar-body").prepend("<b>Appended text</b>");
 });

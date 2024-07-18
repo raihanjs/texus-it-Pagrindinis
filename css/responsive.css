@@ -121,7 +121,23 @@
     line-height: 16px;
   }
   .events-calendar {
-    max-width: 325px;
+    max-width: 335px;
+  }
+  .mbsc-calendar-header.mbsc-ios {
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  button.mbsc-calendar-button {
+    font-size: 18px !important;
+    font-weight: 600;
+  }
+  .mbsc-picker-header {
+    position: absolute;
+    top: 48px;
+    left: 25px;
+    font-size: 14px;
   }
   .events-details .events-list .events-item .events-text p {
     gap: 5px;
