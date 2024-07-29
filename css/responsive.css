@@ -29,6 +29,9 @@
   .main-menu > nav > ul > li > ul {
     top: 70px;
   }
+  .news-slider {
+    max-width: 92%;
+  }
   .news-slider .news-slide div {
     padding: 15px;
     bottom: 15px;
@@ -52,6 +55,12 @@
   }
   .partners-title .partners-bg {
     display: none;
+  }
+  .partners-title .swiper-button-prev {
+    left: 92%;
+  }
+  .partners-title .swiper-button-next {
+    left: 96%;
   }
   .footer-item .footer-logo {
     max-width: 120px;
@@ -153,6 +162,16 @@
   .events-details .events-btn {
     margin-top: 20px;
   }
+  .partners-title .swiper-button-prev {
+    left: 86%;
+  }
+  .partners-title .swiper-button-next {
+    left: 94%;
+  }
+  .partners-title .swiper-button-next::after,
+  .partners-title .swiper-button-prev::after {
+    font-size: 16px;
+  }
   .about-area {
     padding: 30px 0;
   }
@@ -232,16 +251,10 @@
     display: block;
   }
   .news-slider {
-    max-width: 400px;
+    max-width: 90%;
   }
   .news-slider .news-slide {
     max-width: 400px;
-  }
-  .news-btns .slick-prev {
-    left: 1%;
-  }
-  .news-btns .slick-next {
-    left: 95%;
   }
   .events-content {
     flex-direction: column;
@@ -321,9 +334,18 @@
     padding: 30px 0;
   }
   .news-slider {
-    max-width: 300px;
+    max-width: 82%;
   }
-
+  .news-area .swiper-button-prev::after,
+  .news-area .swiper-button-next::after {
+    font-size: 16px;
+  }
+  .partners-title .swiper-button-next {
+    left: 92%;
+  }
+  .partners-title .swiper-button-prev {
+    left: 82%;
+  }
   .about-details {
     flex-direction: column;
   }

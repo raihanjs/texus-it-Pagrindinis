@@ -301,7 +301,7 @@ button {
   margin: 5px;
 }
 .news-slider .news-slide {
-  max-width: 405px;
+  max-width: 410px;
   position: relative;
 }
 .news-slider .news-slide img {
@@ -339,22 +339,26 @@ button {
 .news-slider .news-slide div a i {
   transform: rotate(45deg);
 }
-.news-btns .slick-prev,
-.news-btns .slick-next {
+.news-area .news-slider .swiper-button-prev,
+.news-area .news-slider .swiper-button-next {
   position: absolute;
   top: 50%;
-  left: 5%;
-  font-size: 25px;
-  cursor: pointer;
-  color: var(--theme);
-  background-color: transparent;
+  transform: translateY(-50%);
 }
-.news-btns .slick-next {
-  left: 95%;
+.news-area .news-slider .swiper-button-prev {
+  left: 0;
+}
+.news-area .news-slider .swiper-button-next {
+  right: 0;
+}
+.news-area .swiper-button-prev::after,
+.news-area .swiper-button-next::after {
+  font-size: 25px;
+  color: var(--theme);
 }
 /*----------------------------------------*/
 /*  5. Events Area
-  /*----------------------------------------*/
+/*----------------------------------------*/
 .events-area {
   overflow: hidden;
   padding: 60px 0;
@@ -456,7 +460,7 @@ button.mbsc-calendar-button {
 }
 /*----------------------------------------*/
 /*  6. About Area
-  /*----------------------------------------*/
+/*----------------------------------------*/
 .about-area {
   padding: 60px 0;
 }
@@ -524,15 +528,12 @@ button.mbsc-calendar-button {
 
 /*----------------------------------------*/
 /*  7. Partners Area
-  /*----------------------------------------*/
+/*----------------------------------------*/
 .partners-area {
   padding: 60px 0;
 }
 .partners-title {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 .partners-title .partners-bg {
   z-index: 9;
@@ -540,15 +541,14 @@ button.mbsc-calendar-button {
   top: -212px;
   right: 0px;
 }
-.partners-title .partners-btns {
-  position: absolute;
-  right: 0;
-  z-index: 99;
+.partners-title .swiper-button-prev {
+  left: 94%;
 }
-.partners-title .partners-btns button {
-  margin-left: 20px;
+.partners-title .swiper-button-next {
+  left: 98%;
 }
-.partners-title .partners-btns button i {
+.partners-title .swiper-button-next::after,
+.partners-title .swiper-button-prev::after {
   font-size: 25px;
   color: var(--theme);
 }
