@@ -1,8 +1,47 @@
 $(document).ready(function () {
-  // Mobile Menu btn
-  $(".mobile-menu").click(function () {
-    $(".main-menu").toggleClass("menu-right");
-  });
+  // Mobile Menu Start
+  var $nav = $("#main-nav");
+  var $toggle = $(".toggle");
+  var data = {};
+  var defaultData = {
+    maxWidth: 768,
+    customToggle: $toggle,
+    navTitle: null,
+    levelTitles: true,
+    pushContent: ".container",
+  };
+
+  // calling like this only for demo purposes
+
+  const initNav = function (conf) {
+    var $old = $(".hc-offcanvas-nav");
+
+    setTimeout(
+      function () {
+        if ($old.length) {
+          // clear previous instance
+          $old.remove();
+        }
+      },
+      $toggle.hasClass("toggle-open") ? 420 : 0
+    );
+
+    if ($toggle.hasClass("toggle-open")) {
+      $toggle.click();
+    }
+
+    // remove old toggle click event
+    $toggle.off("click");
+
+    // remember data
+    $.extend(data, conf);
+
+    // call the plugin
+    $nav.clone().hcOffcanvasNav($.extend({}, defaultData, data));
+  };
+  initNav({ side: "right", levelOpen: "expand", levelSpacing: 25 });
+  // Mobile Menu End
+
   // Calendar
   $("#calendar")
     .mobiscroll()

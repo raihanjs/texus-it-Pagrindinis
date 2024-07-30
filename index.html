@@ -22,10 +22,14 @@
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="css/mobiscroll.jquery.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <!--::: Plugin CSS :::-->
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/hc-offcanvas-nav.css" />
 
     <!---::: Main CSS :::-->
     <!-- Style CSS -->
@@ -62,6 +66,7 @@
             <div class="logo">
               <a href="#"><img src="img/logo.png" alt="IRKC Logo" /></a>
             </div>
+            <!-- Desktop Menu -->
             <div class="main-menu">
               <nav>
                 <ul>
@@ -106,9 +111,61 @@
                 </ul>
               </nav>
             </div>
+            <!-- Mobile Menu -->
             <div class="mobile-menu">
-              <span><i class="fas fa-bars"></i></span>
+              <nav id="main-nav">
+                <ul>
+                  <li class="mobile-menu-contact">
+                    <div>
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <i class="fa-solid fa-location-pin"></i>
+                    </div>
+                  </li>
+                  <li><a href="#">Apie mus</a></li>
+                  <li><a href="#">Renginiai</a></li>
+                  <li><a href="#">Projektai</a></li>
+                  <li>
+                    <a>Paslaugos</a>
+                    <ul>
+                      <li>
+                        <a href="#">Scenos Techniniai Duomenys</a>
+                      </li>
+                      <li>
+                        <a href="#">Garso įranga</a>
+                      </li>
+                      <li>
+                        <a href="#">Apšvietimas</a>
+                      </li>
+                      <li>
+                        <a href="#">Lorem ipsum</a>
+                      </li>
+                      <li>
+                        <a href="#">Lorem ipsum</a>
+                      </li>
+                      <li>
+                        <a href="#">Lorem ipsum</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Kolektyvai</a></li>
+                  <li><a href="#">Padaliniai</a></li>
+                  <li><a href="#">Edukacijos</a></li>
+                  <li><a href="#">Savanorystė</a></li>
+                  <li><a href="#">Kontaktai</a></li>
+                </ul>
+              </nav>
+
+              <a class="toggle">
+                <span></span>
+              </a>
             </div>
+            <!-- Mobile Menu -->
           </div>
         </div>
       </div>
@@ -494,6 +551,8 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/mobiscroll.jquery.min.js"></script>
+    <script src="js/hc-offcanvas-nav.js"></script>
+    <script src="js/menu.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
