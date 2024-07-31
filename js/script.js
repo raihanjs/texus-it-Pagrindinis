@@ -12,7 +12,6 @@ $(document).ready(function () {
   };
 
   // calling like this only for demo purposes
-
   const initNav = function (conf) {
     var $old = $(".hc-offcanvas-nav");
 
@@ -42,7 +41,7 @@ $(document).ready(function () {
   initNav({ side: "right", levelOpen: "expand", levelSpacing: 25 });
   // Mobile Menu End
 
-  // Calendar
+  // ========================Calendar========================
   $("#calendar")
     .mobiscroll()
     .datepicker({
@@ -57,7 +56,47 @@ $(document).ready(function () {
 
   $(".mbsc-calendar-body").prepend("<b>Appended text</b>");
 
-  // News Slider
+  var eventList = $(".events-list");
+  var schedule = ["15", "20"];
+  function showSchedule(schedule) {
+    eventList.empty();
+    for (i of schedule) {
+      eventList.append(`
+        <div class="events-item">
+                  <div class="events-date">
+                    <h3>${i}</h3>
+                    <h4>Rugpjūtis</h4>
+                  </div>
+                  <div class="events-text">
+                    <h4>Ąžuoliuko sodinimo ceremonija</h4>
+                    <p><i class="fa-regular fa-clock"></i> 18:00 -19:00</p>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i> Prie Ignalinos
+                      rajono kultūros centro (Ateities g. 43)
+                    </p>
+                  </div>
+      </div>
+      `);
+    }
+  }
+  showSchedule(schedule);
+
+  // Add schedule class after 3 seconds
+  setTimeout(() => {
+    $(
+      ".mbsc-calendar-cell-text[aria-label='Thursday, Rugpjūtis 15, 2024'], .mbsc-calendar-cell-text[aria-label='Tuesday, Rugpjūtis 20, 2024']"
+    ).addClass("schedule");
+  }, 500);
+  // Load Scheduled date
+  setTimeout(() => {
+    $(".schedule").click(function () {
+      var selected = $(this).text();
+      schedule = [selected];
+      showSchedule(schedule);
+    });
+  }, 900);
+
+  // ==========================News Slider==========================
   new Swiper(".news-slider", {
     loop: true,
     breakpoints: {

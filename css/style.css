@@ -386,6 +386,7 @@ button {
 }
 .events-calendar {
   width: 510px;
+  height: 490px;
 }
 .events-calendar img {
   width: 100%;
@@ -421,6 +422,19 @@ button.mbsc-calendar-button {
 }
 .mbsc-ios.mbsc-calendar-button.mbsc-button {
   color: var(--white);
+}
+.mbsc-calendar-cell-text.mbsc-calendar-day-text.mbsc-ios.schedule {
+  position: relative;
+}
+.mbsc-calendar-cell-text.mbsc-calendar-day-text.mbsc-ios.schedule::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: red;
 }
 .events-details .events-title {
   margin-bottom: 30px;
