@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  // Mobile Menu Start
+  // ============================Mobile Menu Start============================
   var $nav = $("#main-nav");
   var $toggle = $(".toggle");
   var data = {};
@@ -41,7 +41,7 @@ $(document).ready(function () {
   initNav({ side: "right", levelOpen: "expand", levelSpacing: 25 });
   // Mobile Menu End
 
-  // ========================Calendar========================
+  // =================================Calendar=================================
   $("#calendar")
     .mobiscroll()
     .datepicker({
@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
   }, 900);
 
-  // ==========================News Slider==========================
+  // ================================News Slider================================
   new Swiper(".news-slider", {
     loop: true,
     breakpoints: {
@@ -120,7 +120,7 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
-  // Partners Slider
+  // ==============================Partners Slider==============================
   new Swiper(".partners-slider", {
     loop: true,
     breakpoints: {

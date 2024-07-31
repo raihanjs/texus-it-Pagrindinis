@@ -55,6 +55,7 @@ h5,
 h6 {
   margin: 0;
   font-weight: 600;
+  text-align: left;
 }
 h1 {
   color: var(--white);
@@ -87,12 +88,17 @@ h5 {
 }
 a {
   text-decoration: none;
+  text-align: left;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
+}
+p {
+  text-align: left;
 }
 ul,
 li {
   list-style-type: none;
+  text-align: left;
 }
 button {
   border: 0;

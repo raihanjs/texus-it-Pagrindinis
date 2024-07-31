@@ -131,6 +131,7 @@
   }
   .events-calendar {
     max-width: 335px;
+    height: 410px;
   }
   .mbsc-calendar-header.mbsc-ios {
     padding: 10px;
@@ -272,6 +273,7 @@
   }
   .events-calendar {
     margin: 0 auto;
+    height: 410px;
     margin-bottom: 10px;
   }
   .about-details .right {
