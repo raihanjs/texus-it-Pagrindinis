@@ -99,6 +99,9 @@ $(document).ready(function () {
   // ================================News Slider================================
   new Swiper(".news-slider", {
     loop: true,
+    autoplay: {
+      delay: 2000,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -123,6 +126,9 @@ $(document).ready(function () {
   // ==============================Partners Slider==============================
   new Swiper(".partners-slider", {
     loop: true,
+    autoplay: {
+      delay: 2000,
+    },
     breakpoints: {
       320: {
         slidesPerView: 2,
